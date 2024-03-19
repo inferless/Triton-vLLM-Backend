@@ -12,7 +12,7 @@ docker pull nvcr.io/nvidia/tritonserver:24.02-vllm-python-py3
 ## STEP 2: Model Repository
 Setting up the model repository for vLLM is akin to setting up Triton Server. You can do this by copying the provided [model repository](./vllm_model) and modifying the model configuration in the [`model.json`](./vllm_model/1/model.json) file.
 
-In the [`model.json`](./vllm_model/1/model.json) file, you'll find a key-value dictionary format. Modify the `model` value to specify the model you want to use. This file is essential as it provides the necessary configuration information to vLLM's AsyncLLMEngine during model initialization.
+In the [`model.json`](./model_repository/vllm_model/1/model.json) file, you'll find a key-value dictionary format. Modify the `model` value to specify the model you want to use. This file is essential as it provides the necessary configuration information to vLLM's AsyncLLMEngine during model initialization.
 
 These files have been copied from [here](https://github.com/triton-inference-server/vllm_backend/blob/main/samples/model_repository/).
 
